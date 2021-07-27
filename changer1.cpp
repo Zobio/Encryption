@@ -9,4 +9,5 @@ std::vector<std::string> changeWord(std::vector<std::string> words) {
 			words[i][j]++;
 		}
 	}
+	return words;
 }
