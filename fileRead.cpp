@@ -16,13 +16,6 @@ text readFile(string fileName){
         getline(f,value);
         lines.push_back(value);
     }
-    
-    text words;
-    for(int i=0;i<lines.size();i++){
-        istringstream iss(lines[i]);
-        string s;
-        while(iss >> s)words.push_back(s);
-    }
     f.close();
-    return words;
+    return lines;
 }
